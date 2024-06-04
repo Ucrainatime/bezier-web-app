@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap");
+
+
+html,
+body {
+  overflow: hidden;
+  background: #111111;
+}
+
+* {
+  font-family: Inconsolata, Consolas;
+}
+
+.inputs {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: #CCCCCC;
+  display: flex;
+  flex-direction: row
+}
+
+.inputs * {
+  margin-right: 1rem;
+}
+
+.picker {
+  outline: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 25%;
+}
+
+.menu {
+  top: 0;
+  right: 0;
+  margin: 0;
+  display: flex;
+  opacity: 0.8;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  transition: 0.3s;
+}
+
+.lista {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.05);
+  width: 20%;
+  height: 49.5vh;
+}
+
+#progetti {
+  position: absolute;
+  border-radius: 0px 0px 0px 10px;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+#punti {
+  position: absolute;
+  border-radius: 10px 0px 0px 0px;
+  bottom: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+ul {
+  text-align: left;
+  color: #cccccc;
+  list-style: none;
+  font-size: 1.35rem;
+  margin: 0;
+  padding: 1rem;
+  flex-grow: 1;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+li {
+  overflow-y: scroll;
+  scrollbar-width: none;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  margin: 1rem auto;
+  width: 80% !important;
+  color: #111111;
+  background: #cccccc;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 700;
+  padding: 0.5rem;
+  transition: 0.17s;
+}
+
+.button:hover {
+  color: #cccccc;
+  background: #111111;
+}
+
+.button:active {
+  background-color: #440000;
+}
+
+a.save {
+  float: right;
+  color: red;
+}
+
+.dim {
+  font-size: 20px;
+}
+
+.project {
+  color: #cccccc;
+}
+
+.project:hover {
+  color: #eeeeee;
+}
+
+.project:active {
+  color: #787878;
+}
+
+.deletepoint,
+.deleteproject {
+  color: #b10b0b;
+  float: right;
+}
+
+.deletepoint:hover,
+.deleteproject:hover {
+  color: red;
+}
+
+.deletepoint:active,
+.deleteproject:active {
+  color: #940000;
+}
+
+.InputProject {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.InputProject:focus {
+  background-color: transparent;
+  outline: none;
+  width: 100%;
+}
+
+#Stax {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  color: #464646;
+  font-size: ;
+}

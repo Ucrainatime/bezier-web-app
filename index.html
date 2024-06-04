@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bezier designer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+  <div class="inputs">
+    <input type="color" class="picker" id="pointPicker"></input>
+    <p>Colore<br>Punto</p>
+    <input type="color" class="picker" id="linePicker"></input>
+    <p>Colore<br>Linea</p>
+    <input type="color" class="picker" id="tlinePicker"></input>
+    <p>Colore<br>Linea di T</p>
+  </div>
+  <div class="menu">
+    <div class="lista" id="progetti">
+      <a class="button" onclick="addProject()">New Project</a>
+      <ul id="lista-progetti"></ul>
+    </div>
+
+    <div class="lista" id="punti">
+      <a class="button" onclick="deleteAllPoint()">Delete All Points</a>
+      <ul id="punti-lista"></ul>
+    </div>
+  </div>
+  <div id="Stax"> <i>&copy 2024-2024 Staxx</i> </div>
+  <canvas id="canvasElement"></canvas>
+  <script src="script.js"></script>
+</body>
+
+</html>
