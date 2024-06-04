@@ -1,0 +1,8 @@
+#!/bin/bash
+
+g++ main.cpp http.cpp -std=c++20 -o server
+if [[ $? == '0' ]]; then
+    while [ 1 ]; do 
+        ./server
+    done
+fi
